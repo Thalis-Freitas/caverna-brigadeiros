@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #cb885d;
+}
+
+body{
+    position: relative;
+    background-color: #893f29;
+    max-width: 80%;
+    margin: auto; 
+    max-height: 500px;   
+}
+
+#header{
+    height: 330px;
+    background-image: url(../imagens/brigadeiro-a-brazilian-sweet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulo-main{
+    position: relative;
+    height: 130px;
+    width: 100%;
+    bottom: 40px;
+    background-image: url(../imagens/fundo-main-sabores.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    bottom: 41px;
+    background-color: #cb885d;
+}
+
+#lista-sabores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+li{
+    list-style: none;
+    font-family: 'Macondo', cursive;
+    opacity: 0.9;
+    font-size: 4vmin;
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../imagens/brigadeiro-48.png);
+    position: relative;
+    top: 12px;
+}
+
+h1, h2{
+    position: relative;
+    top: 35px;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+}
+
+h1{
+    opacity: 0.6;
+}
+
+#encomenda{
+    top: 20px;
+	display: grid;
+    grid-template-areas: "img-kit4 texto-kit4e6"
+    "texto-kit10eObs img-kit6";
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#img-kit4, #img-kit6{
+    display: inline-block;
+    width: 35vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#img-kit4{
+	grid-area: img-kit4;
+    background-image: url(../imagens/kit-4.png);
+}
+
+#texto-kit4e6{
+	grid-area: texto-kit4e6;
+    height: 210px;
+}
+
+#texto-kit10eObs{
+	grid-area: texto-kit10eObs;
+    height: 230px;
+}
+
+#obs{
+    width: 200px;
+    margin: auto;
+}
+
+#img-kit6{
+	grid-area: img-kit6;
+    background-image: url(../imagens/kit-6.png);
+}
+
+footer{
+    position: relative;
+    top: -41px;
+    height: 280px;
+    width: 100%;
+    background-color: #260c04;
+}
+
+h3{
+    position: relative;
+    top: 15px;
+    padding: 25px;
+    color: #cb885d;    
+    font-family: 'Macondo', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#texto-footer{
+    color: #cb885d;
+    opacity: 0.7;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#whatsapp-footer:hover {   
+    border-bottom: 1px solid white;
+}
+
+@media screen and (min-width: 710px){
+    h3, #texto-footer{
+        font-size: 3vmin;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #titulo-main{
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+    }
+}
+
+    @media screen and (max-width: 710px){
+
+        #titulo-main{
+            background-image: url(../imagens/fundo-main-movel-sabores.png);        
+        }
+
+        li{
+            font-size: 4vmin;
+        }
+}
+
+
+@media screen and (max-width: 640px){
+
+    #encomenda{
+        grid-template-areas: "img-kit4"
+        "texto-kit4e6"
+        "img-kit6"
+        "texto-kit10eObs";
+        grid-gap: 10px;
+
+    }
+    
+    #img-kit4, #img-kit6{
+    width: 70vw;
+    height: 70vw;
+}
+
+}
+
+@media screen and (max-width: 460px){
+    body{
+        max-width: 100%;
+    }
+    li{
+        font-size: 7vmin;
+        letter-spacing: -1px;
+        text-indent: 3px;
+    }
+
+    #img-kit4, #img-kit6{
+        width: 80vw;
+        height: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    li::before{
+        width: 30px;
+        height: 30px;
+        background-image: url(../imagens/brigadeiro-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 7px;
+    }
+}
+
+
+

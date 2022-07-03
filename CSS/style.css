@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #cb885d;
+}
+
+body{
+    position: relative;
+    background-color: #893f29;
+    max-width: 80%;
+    margin: auto; 
+    max-height: 500px;   
+}
+
+#header{
+    height: 330px;
+    background-image: url(../imagens/brigadeiro-a-brazilian-sweet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    bottom: 40px;
+    background-image: url(../imagens/fundo-main.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2{
+    position: relative;
+    top: 35px;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+}
+
+h1{
+    opacity: 0.6;
+}
+
+#contato{
+    width: 160px;
+    height: 58px;
+    margin: auto;
+    position: relative;
+    top: 55px;  
+}
+
+#insta{
+    position: relative;
+    height: 58px;
+    width: 58px;
+    left: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#insta:active{
+    background-color: #893f29;
+    opacity: 0.5;
+}
+
+#wpp:active{
+    background-color: #893f29;
+    opacity: 0.5;
+}
+
+
+#insta:hover{
+    background-color: #893f29;
+    opacity: 0.5;
+}
+
+#wpp:hover{
+    background-color: #893f29;
+    opacity: 0.5;
+}
+
+#sabores:hover{
+    background-color: #260c04;
+}
+
+svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wpp{
+    position: absolute;
+    height: 58px;
+    width: 58px;
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+}
+
+#sabores{
+    outline: 1px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    top: 195px;
+    display: inline-block;
+    margin: 15px;
+    width: 200px;
+    height: 28px;
+    background-color: #893f29;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: monospace;
+}
+
+#sabores:active{
+    background-color:  #260c04;
+
+}
+
+#encomenda{
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#text-encomendas{
+    position: absolute;
+    top: 295px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px black;
+    line-height: 1;
+}
+
+footer{
+    position: relative;
+    top: -40px;
+    height: 280px;
+    width: 100%;
+    background-color: #260c04;
+}
+
+h3{
+    position: relative;
+    top: 15px;
+    padding: 25px;
+    color: #cb885d;    
+    font-family: 'Macondo', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#texto-footer{
+    color: #cb885d;
+    opacity: 0.7;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#whatsapp-footer:hover {   
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 460px){
+    body{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #text-encomendas{
+        font-size: 4.2vw;
+    }
+}
+
+@media screen and (min-width: 710px){
+    main{
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+    }
+
+    h3, #texto-footer{
+        font-size: 3vmin;
+        max-width: 700px;
+        margin: auto;
+    }
+}
+    @media screen and (max-width: 710px){
+        main{
+            background-image: url(../imagens/fundo-main-movel.png);        
+        }
+
+}
+
